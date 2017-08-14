@@ -1,0 +1,8 @@
+<h1>Game page</h1>
+<h2><%= @grid_letters %></h2>
+<form action="/score">
+  <input type="text" name="word" placeholder="guess a word!">
+  <input type="hidden" name="letters" value="<%= @grid_letters %>">
+  <input type="hidden" name="time" value="<%= @start_time %>">
+  <input type="submit" value="Go on!">
+</form>
